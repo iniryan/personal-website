@@ -1,0 +1,234 @@
+header {
+  height: 100px;
+}
+header .inner-header {
+  position: relative;
+  height: 100px;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo a {
+  font-weight: 800;
+  font-size: 25px;
+  text-decoration: none;
+  color: #3a3a3c;
+}
+.dark-mode header .logo a {
+  color: #fff;
+}
+header .menu button {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  mix-blend-mode: difference;
+  padding: 0 23px;
+  fill: #3a3a3c;
+  stroke: #3a3a3c;
+}
+.dark-mode header .menu button {
+  fill: #fff;
+  stroke: #fff;
+}
+header .mode button {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  mix-blend-mode: difference;
+  padding: 0 23px;
+  fill: #3a3a3c;
+}
+.dark-mode header .mode button {
+  fill: #fff;
+}
+header .hamburger-menu {
+  display: none;
+  z-index: 9;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+header .menu-secondary-background-color {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background: #3a3a3c;
+}
+.dark-mode header .menu-secondary-background-color {
+  background: #f9eb21;
+}
+header .menu-layer {
+  position: relatiave;
+  background: #de2e26;
+  height: 100%;
+  overflow: hidden;
+}
+.dark-mode header .menu-layer {
+  background: #3a3a3c;
+}
+header .menu-layer .wrapper {
+  position: relative;
+}
+header .menu-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  top: 150px;
+  padding: 0 50px;
+}
+header nav {
+  display: block;
+  width: 70%;
+}
+header nav ul {
+  margin: 0;
+  padding: 0;
+}
+header nav ul li {
+  list-style: none;
+  font-size: 6rem;
+  font-weight: 700;
+  cursor: pointer;
+  height: 110px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+header nav ul li a {
+  position: absolute;
+  color: #fff;
+  text-decoration: none;
+}
+header nav ul li a:hover {
+  color: #3a3a3c;
+}
+.dark-mode header nav ul li a {
+  color: #fff;
+}
+.dark-mode header nav ul li a:hover {
+  color: #f9eb21;
+}
+header .info {
+  color: #fff;
+  width: 30%;
+}
+.dark-mode header .info {
+  color: #fff;
+}
+header .info h3 {
+  font-size: 2rem;
+  letter-spacing: 0.12rem;
+  margin: 12px auto;
+}
+header .social {
+  display: flex;
+  position: relative;
+}
+header .social a {
+  position: relative;
+  display: block;
+  width: 72px;
+  height: 72px;
+  padding: 8px;
+  background: #fff;
+  border-radius: 50px;
+  margin: 0 5px;
+}
+header .social a svg {
+  fill: #de2e26;
+  width: 100%;
+  height: 100%;
+}
+.dark-mode header .social a svg {
+  fill: #3a3a3c;
+}
+header .social a:hover {
+  background: #3a3a3c;
+  transition: 0.2s;
+  transform: translateY(-20px);
+}
+.dark-mode .social a:hover {
+  background: #f9eb21;
+}
+@media screen and (max-width: 756px) {
+  header .menu-links {
+    padding: 0;
+  }
+  header nav {
+    width: 90%;
+  }
+  header .social {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 30px;
+  }
+  header .social a {
+    width: 56px;
+    height: 56px;
+    margin: 5px 0;
+  }
+  header .social a:hover {
+    transition: 0.2s;
+    transform: translateX(-20px);
+  }
+  header .info {
+    width: 10%;
+  }
+  header .info h3 {
+    display: none;
+  }
+  header nav ul li {
+    font-size: 4rem;
+    height: 72px;
+  }
+}
+@media screen and (max-width: 576px) {
+  header .menu-links {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0;
+  }
+  header nav {
+    width: 100%;
+  }
+  header .social {
+    flex-direction: row;
+    padding: 0;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  header .social a {
+    width: 56px;
+    height: 56px;
+    margin: 0 5px;
+  }
+  header .social a:hover {
+    transition: 0.2s;
+    transform: translateY(-20px);
+  }
+  header .info {
+    margin-top: 48px;
+    width: 100%;
+  }
+  header .info h3 {
+    display: none;
+  }
+  header nav ul li {
+    font-size: 3rem;
+    height: 72px;
+  }
+}

@@ -1,0 +1,108 @@
+#project.container {
+  background-image: url(../../assets/Project.png);
+  background-repeat: no-repeat;
+}
+.dark-mode #project.container {
+  background-image: url(../../assets/Project-dark.png);
+  background-repeat: no-repeat;
+}
+#project .common {
+  text-align: right;
+}
+.featured-projects {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  justify-content: center;
+}
+.featured-projects .project {
+  display: flex;
+  margin-bottom: 80px;
+  width: 100%;
+}
+.featured-projects .project-pict {
+  max-width: 700px;
+  height: 100%;
+  overflow: visible;
+  margin: 0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+    0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+    0 8px 16px rgba(0, 0, 0, 0.11);
+}
+.featured-projects .project-pict img {
+  width: 100%;
+  max-width: 100%;
+  vertical-align: bottom;
+}
+.featured-projects .project-caption {
+  width: 320px;
+  margin-left: 30px;
+}
+.featured-projects .project-name {
+  font-weight: 700;
+  font-size: 32px;
+}
+.featured-projects .project p {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 25px;
+}
+.link {
+  font-size: 16px;
+  font-weight: 600;
+  color: #3a3a3c;
+  display: inline-block;
+  margin-top: 15px;
+  text-decoration: none;
+}
+.link:after {
+  display: none;
+}
+.dark-mode .link {
+  color: #fff;
+  opacity: 0.8;
+}
+.used {
+  margin-top: 30px;
+}
+.used .used-items {
+  padding: 0;
+}
+.used .used-items .used-item {
+  display: inline-block;
+  padding: 7px 7px 5px;
+  margin-right: 5px;
+  border: 2px solid #3a3a3c;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+.dark-mode .used .used-items .used-item {
+  border: 2px solid #f9eb21;
+}
+/* ========================================== */
+@media screen and (max-width: 765px) {
+  .featured-projects .project {
+    width: 100%;
+    display: block;
+  }
+  .featured-projects .project-caption {
+    width: 100%;
+    margin-top: 30px;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  #project.container {
+    background-image: url(../../assets/Project-mobile.png);
+    background-repeat: no-repeat;
+  }
+  .dark-mode #project.container {
+    background-image: url(../../assets/Project-mobile-dark.png);
+    background-repeat: no-repeat;
+  }
+}

@@ -1,0 +1,258 @@
+#contact.container {
+  background-image: url(../../assets/Contact.png);
+  background-repeat: no-repeat;
+}
+.dark-mode #contact.container {
+  background-image: url(../../assets/Contact-dark.png);
+  background-repeat: no-repeat;
+}
+#contact .common {
+  text-align: center;
+}
+.contacts {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.contacts p {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+}
+.contacts .emailme {
+  display: none;
+}
+#contact .col-12 {
+  flex: 0 0 100%;
+}
+.map {
+  margin: 30px 0;
+  padding-bottom: 20px;
+  position: relative;
+  display: flex;
+}
+.map .java {
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 800;
+  letter-spacing: 11px;
+  position: absolute;
+  top: 12%;
+  left: 8%;
+}
+.map img {
+  width: 100%;
+}
+.map .big-tooltip {
+  justify-content: center;
+  width: 165px;
+  text-align: right;
+  background: #de2e26;
+  padding: 0px 14px;
+  border-radius: 6px;
+  top: 48%;
+  left: 66.5%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.8;
+}
+.dark-mode .map .big-tooltip {
+  background: #f9eb21;
+}
+.map .big-tooltip::after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 75%;
+  margin-bottom: -10px;
+  border-width: 10px;
+  border-style: solid;
+  border-color: #de2e26 transparent transparent transparent;
+}
+.dark-mode .map .big-tooltip::after {
+  border-color: #f9eb21 transparent transparent transparent;
+}
+.map .big-tooltip span {
+  color: #fff;
+  font-weight: 600;
+}
+.dark-mode .map .big-tooltip span {
+  color: #3a3a3c;
+}
+.map .circle {
+  width: 250px;
+  height: 250px;
+  line-height: 250px;
+  border-radius: 50%;
+  left: 38%;
+  top: 3%;
+  background: #de2e26;
+  position: absolute;
+  opacity: 0.2;
+}
+.dark-mode .map .circle {
+  background: #f9eb21;
+  opacity: 0.2;
+}
+.map .circle-inside {
+  width: 200px;
+  height: 200px;
+  line-height: 200px;
+  border-radius: 50%;
+  text-align: center;
+  left: 40.2%;
+  top: 9.5%;
+  background: #de2e26;
+  position: absolute;
+}
+.dark-mode .map .circle-inside {
+  background: #f9eb21;
+}
+.map .circle-inside a {
+  text-decoration: none;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 600;
+}
+.dark-mode .map .circle-inside a {
+  color: #3a3a3c;
+}
+.map .circle-inside:hover {
+  transform: scale(1.5, 1.5);
+}
+.map .location-dot {
+  width: 20px;
+  height: 20px;
+  background: #de2e26;
+  border-radius: 10px;
+  top: 70%;
+  left: 78%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+.dark-mode .map .location-dot {
+  background: #f9eb21;
+}
+.map .location-ring {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #de2e26;
+  border-radius: 50px;
+  top: calc(70% - 25px);
+  left: calc(78% - 25px);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  animation: pulsate 1.5s ease-out infinite;
+}
+.dark-mode .map .location-ring {
+  border: 2px solid #f9eb21;
+}
+@keyframes pulsate {
+  0% {
+    transform: scale(0.1, 0.1);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
+}
+/* ===================================== */
+@media screen and (max-width: 756px) {
+  .map {
+    padding: 30px 0;
+  }
+  .map .java {
+    top: 0%;
+    left: 45%;
+  }
+  .map .big-tooltip {
+    top: 37%;
+    left: 56.5%;
+    text-align: left;
+    padding: 0 16px;
+  }
+  .map .big-tooltip::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 75%;
+    margin-bottom: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: #de2e26 transparent transparent transparent;
+  }
+  .map .circle {
+    width: 250px;
+    height: 250px;
+    line-height: 250px;
+    left: 5%;
+    top: -10%;
+  }
+  .map .circle-inside {
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    left: 9%;
+    top: 0%;
+  }
+}
+@media screen and (max-width: 576px) {
+  #contact.container {
+    background-image: none;
+  }
+  .dark-mode #contact.container {
+    background-image: none;
+  }
+  .map {
+    display: none;
+  }
+  .map .circle {
+    display: none;
+  }
+  .map .circle-inside {
+    display: none;
+  }
+  .contacts .emailme {
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .contacts .emailme a {
+    padding: 10px 60px;
+    text-decoration: none;
+    color: #fff;
+    background: #de2e26;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
+      0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
+      0 8px 16px rgba(0, 0, 0, 0.11);
+  }
+  .contacts .emailme a:hover {
+    background: #3a3a3c;
+  }
+  .dark-mode .contacts .emailme a {
+    background: #f9eb21;
+    color: #3a3a3c;
+  }
+  .dark-mode .contacts .emailme a:hover {
+    background: #fff;
+    color: #3a3a3c;
+  }
+  #contact h3.title {
+    font-size: 40px;
+  }
+  #contact h3.title span {
+    font-size: 45px;
+  }
+}

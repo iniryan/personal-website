@@ -8,7 +8,7 @@ function About({ aboutme }) {
   const [title] = useState({
     title: "About me",
     subtitle: "Skills",
-    downloadCv: "DOWNLOAD MY CV HERE",
+    download: "DOWNLOAD MY CV HERE",
   });
 
   let aboutcs = useRef(null);
@@ -59,7 +59,7 @@ function About({ aboutme }) {
           <div className="btn-cv">
             <div className="interest">
               <div className="title">Interested working with me?</div>{" "}
-              <a href={pdf}>{title.downloadCv}</a>
+              <a href={pdf}>{title.download}</a>
             </div>
           </div>
           <div className="col-12 top">

@@ -109,7 +109,7 @@ function Project() {
   useEffect(() => {
     projectss(projectcs);
   });
-  
+
   return (
     <div className="container" id="project" ref={(el) => (projectcs = el)}>
       <div className="wrapper">

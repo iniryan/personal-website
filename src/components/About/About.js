@@ -1,16 +1,16 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./About.css";
-import pdf from "../../assets/CV-RyanAdiSaputra.pdf";
+import pdf from "../../assets/Portfolio-RyanAdiSaputra.pdf";
 
 import { aboutss } from "../ScrolltriggerGsap";
 
-function About({aboutme}) {
+function About({ aboutme }) {
   const [title] = useState({
     title: "About me",
     subtitle: "Skills",
     downloadCv: "DOWNLOAD MY CV HERE",
   });
-  
+
   let aboutcs = useRef(null);
   useEffect(() => {
     aboutss(aboutcs);
@@ -31,8 +31,8 @@ function About({aboutme}) {
           </div>
           <div className="col-12 col-lg-6">
             <p className="aboutme-p">
-              Hi, My name is<strong> Ryan Adi Saputra</strong>, I’m a fresh graduate 
-              who is very enthusiastic about software development and UI / UX design. 
+              Hi, My name is<strong> Ryan</strong>, I am a college student majoring in software engineering.
+              I am very enthusiastic about software development and UI / UX design. Gradually gaining experience and structuring my knowledge.
               I always feel challenged to work on new projects and I am highly dedicated to my work.
               I have a passion for creating user experience that are efficient, meaningful, and impactful.
               Understanding the human experience is essential for creating
@@ -45,8 +45,7 @@ function About({aboutme}) {
               decided to take software engineering as my competency when entered{" "}
               <strong>Vocational High School 4 Malang</strong>. I learn about
               UI/UX Designer & Website Developer for at least 2 years. I was
-              intern at <strong>Ministry Of State Secretary RI</strong> for 3
-              months. And after that, I'm was intern at{" "}
+              intern at <strong>Ministry Of State Secretariat RI</strong> as a graphic designer. And after that, I'm was intern at{" "}
               <strong>PT. MejaKita Edunusa Mandiri</strong> as UI/UX Designer.
             </p>
             <p className="aboutme-p">

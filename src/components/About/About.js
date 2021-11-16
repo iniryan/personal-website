@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./About.css";
-import pdf from "../../assets/Portfolio-RyanAdiSaputra.pdf";
+import pdf from "../../assets/Portfolio-RyanAdiSaputraNew.pdf";
 
 import { aboutss } from "../ScrolltriggerGsap";
 
